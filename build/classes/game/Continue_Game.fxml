@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1400.0" prefWidth="1749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Continue_GameController">
+   <children>
+      <Text layoutX="186.0" layoutY="474.0" strokeMiterLimit="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of games on server" wrappingWidth="329.21875" />
+      <Separator layoutY="56.0" prefHeight="17.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="56.0" />
+      <Text layoutX="697.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Continue Game" wrappingWidth="228.21875" AnchorPane.leftAnchor="696.21875" AnchorPane.rightAnchor="824.5625" />
+      <ListView fx:id="lvListOfGames" layoutX="550.0" layoutY="246.0" prefHeight="434.0" prefWidth="699.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="500.0" />
+      <ScrollBar layoutX="1213.0" layoutY="246.0" orientation="VERTICAL" prefHeight="434.0" prefWidth="36.0" AnchorPane.rightAnchor="500.0" />
+      <Button fx:id="btnResumeGame" layoutX="720.0" layoutY="810.0" mnemonicParsing="false" onAction="#goToGameStage" text="Resume Game" AnchorPane.leftAnchor="720.0" AnchorPane.rightAnchor="798.0" />
+      <Button fx:id="btnBackFromContinueGameS" layoutX="771.0" layoutY="1003.0" mnemonicParsing="false" onAction="#goToMainStage" text="Back" />
+   </children>
+</AnchorPane>

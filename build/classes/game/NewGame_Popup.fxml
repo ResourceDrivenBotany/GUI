@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="newGame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1172.0" prefWidth="1665.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.NewGame_PopupController">
+   <children>
+      <TextField id="tfPlayerName" fx:id="tfPlayerName" layoutX="414.0" layoutY="113.0" prefHeight="65.0" prefWidth="652.0" AnchorPane.leftAnchor="414.0" AnchorPane.rightAnchor="599.0" />
+      <Text layoutX="663.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Game " wrappingWidth="166.0" AnchorPane.leftAnchor="663.0" AnchorPane.rightAnchor="836.0" />
+      <Text layoutX="187.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name" wrappingWidth="195.0" AnchorPane.leftAnchor="187.0" AnchorPane.rightAnchor="1283.0" />
+      <Text layoutX="614.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Plant Types" wrappingWidth="323.134765625" />
+      <Button fx:id="btnPlay" layoutX="532.0" layoutY="774.0" mnemonicParsing="false" onAction="#goToGameStage" prefHeight="65.0" prefWidth="440.0" text="Play" AnchorPane.leftAnchor="532.0" AnchorPane.rightAnchor="693.0" />
+      <HBox layoutX="427.0" layoutY="399.0" prefHeight="100.0" prefWidth="796.0" spacing="30.0" AnchorPane.leftAnchor="427.0" AnchorPane.rightAnchor="442.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <CheckBox fx:id="cbFlower" mnemonicParsing="false" text="Flower" />
+            <CheckBox fx:id="cbOak" mnemonicParsing="false" text="Oak" />
+            <CheckBox fx:id="cbConifers" mnemonicParsing="false" text="Conifers" />
+            <CheckBox fx:id="cbTree" mnemonicParsing="false" prefHeight="45.0" prefWidth="230.0" text="Tree" />
+         </children>
+      </HBox>
+      <Button fx:id="btnBackFromNewGame" layoutX="725.0" layoutY="926.0" mnemonicParsing="false" onAction="#goToMainStage" text="Back" />
+   </children>
+</AnchorPane>

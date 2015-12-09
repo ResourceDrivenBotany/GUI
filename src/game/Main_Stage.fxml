@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.Blend ?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1020.0" prefWidth="1612.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Main_StageController">
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
+   </top>
+   <left>
+      <VBox prefHeight="820.0" prefWidth="465.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane prefHeight="805.0" prefWidth="947.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="btnNewGame" layoutX="175.0" layoutY="74.0" mnemonicParsing="false" onAction="#goToNewGamePopUp" prefHeight="65.0" prefWidth="271.0" text="New Game" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="601.0" AnchorPane.topAnchor="74.0" />
+            <Button id="btnContinue" layoutX="175.0" layoutY="184.0" mnemonicParsing="false" onAction="#goToContinueStage" prefHeight="65.0" prefWidth="274.0" text="Continue" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="601.0" AnchorPane.topAnchor="184.0" />
+            <Button id="btnSetting" layoutX="175.0" layoutY="290.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="274.0" text="Setting" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="601.0" AnchorPane.topAnchor="290.0" />
+            <Button id="btnTutorial" layoutX="175.0" layoutY="397.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="280.0" text="Tutorial" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="601.0" AnchorPane.topAnchor="397.0" />
+            <Button layoutX="175.0" layoutY="506.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="282.0" text="Quit" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="601.0" AnchorPane.topAnchor="506.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

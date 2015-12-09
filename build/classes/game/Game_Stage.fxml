@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1500.0" prefWidth="2000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Game_StageController">
+   <children>
+      <SplitPane dividerPositions="0.7552552552552553" layoutX="773.0" layoutY="484.0" prefHeight="1500.0" prefWidth="2000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.14906417112299467" layoutX="671.0" layoutY="389.0" orientation="VERTICAL" prefHeight="1498.0" prefWidth="1501.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button fx:id="btnBackFromGameS" layoutX="1275.0" layoutY="50.0" mnemonicParsing="false" onAction="#gotoMainStage" text="Back" AnchorPane.leftAnchor="1275.0" AnchorPane.rightAnchor="122.0" />
+                              <Label fx:id="lblSeason" layoutX="491.0" layoutY="77.0" text="Season" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="816.0" prefWidth="1499.0">
+                           <children>
+                              <Label layoutX="195.0" layoutY="123.0" text="Buff" />
+                              <Label layoutX="680.0" layoutY="123.0" text="Attack" />
+                              <Label layoutX="1132.0" layoutY="123.0" text="Defend" />
+                              <TextField fx:id="tfBuff" layoutX="44.0" layoutY="252.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="1010.0" />
+                              <TextField fx:id="tfAttack" layoutX="557.0" layoutY="252.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="600.0" />
+                              <TextField fx:id="tfDefend" layoutX="1040.0" layoutY="252.0" AnchorPane.leftAnchor="1050.0" AnchorPane.rightAnchor="83.0" />
+                              <Label layoutX="195.0" layoutY="520.0" text="Resources" />
+                              <RadioButton fx:id="rbSoil" layoutX="489.0" layoutY="520.0" mnemonicParsing="false" text="Soil">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="tgResources" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="rbWater" layoutX="782.0" layoutY="508.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="133.0" text="Water" toggleGroup="$tgResources" />
+                              <Button fx:id="btnGo" layoutX="641.0" layoutY="678.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="161.0" text="Go" AnchorPane.leftAnchor="641.0" AnchorPane.rightAnchor="697.0" />
+                              <TextArea fx:id="tfCurrentLog" layoutX="149.0" layoutY="818.0" prefHeight="309.0" prefWidth="1189.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="161.0" />
+                              <TextField fx:id="tfEffectOfSelection" layoutX="445.0" layoutY="370.0" prefHeight="65.0" prefWidth="971.0" AnchorPane.leftAnchor="445.0" AnchorPane.rightAnchor="83.0" />
+                              <Label layoutX="62.0" layoutY="380.0" text="Effect of current selection" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.6824866310160428" layoutX="200.0" layoutY="392.0" orientation="VERTICAL" prefHeight="1498.0" prefWidth="486.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="99.0" prefWidth="161.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="73.0" text="Player 1" />
+                              <Label layoutX="14.0" layoutY="542.0" text="Player 3" />
+                              <Label layoutX="14.0" layoutY="309.0" text="Player 2" />
+                              <Label layoutX="14.0" layoutY="822.0" text="Player 4" />
+                              <TextArea fx:id="taPlayer1Resources" layoutX="126.0" layoutY="29.0" prefHeight="200.0" prefWidth="273.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="80.0" />
+                              <TextArea fx:id="taPlayer2Resources" layoutX="126.0" layoutY="295.0" prefHeight="200.0" prefWidth="273.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="80.0" />
+                              <TextArea fx:id="taPlayer3Resources" layoutX="126.0" layoutY="542.0" prefHeight="200.0" prefWidth="273.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="80.0" />
+                              <TextArea fx:id="taPlayer4Resources" layoutX="126.0" layoutY="791.0" prefHeight="200.0" prefWidth="273.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="80.0" />
+                              <CheckBox layoutX="406.0" layoutY="95.0" mnemonicParsing="false" AnchorPane.leftAnchor="406.0" AnchorPane.rightAnchor="19.0" />
+                              <CheckBox layoutX="406.0" layoutY="385.0" mnemonicParsing="false" AnchorPane.leftAnchor="406.0" AnchorPane.rightAnchor="19.0" />
+                              <CheckBox layoutX="406.0" layoutY="620.0" mnemonicParsing="false" AnchorPane.leftAnchor="406.0" AnchorPane.rightAnchor="19.0" />
+                              <CheckBox layoutX="406.0" layoutY="854.0" mnemonicParsing="false" AnchorPane.leftAnchor="406.0" AnchorPane.rightAnchor="19.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="220.0">
+                           <children>
+                              <Label layoutX="131.0" layoutY="14.0" prefHeight="45.0" prefWidth="193.0" text="Score Board" />
+                              <Label fx:id="lblPlayer1Score" layoutX="26.0" layoutY="80.0" prefHeight="45.0" prefWidth="134.0" text="Player 1" />
+                              <Label fx:id="lblPlayer2Score" layoutX="26.0" layoutY="150.0" prefHeight="45.0" prefWidth="128.0" text="Player 2" />
+                              <Label fx:id="lblPlayer3Score" layoutX="26.0" layoutY="220.0" prefHeight="45.0" prefWidth="128.0" text="Player 3" />
+                              <Label fx:id="lblPlayer4Score" layoutX="26.0" layoutY="290.0" prefHeight="45.0" prefWidth="134.0" text="Player 4" />
+                              <TextArea fx:id="tfPlayer1Score" layoutX="154.0" layoutY="80.0" prefHeight="45.0" prefWidth="161.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="164.0" />
+                              <TextArea fx:id="tfPlayer2Score" layoutX="154.0" layoutY="150.0" prefHeight="45.0" prefWidth="161.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="164.0" />
+                              <TextArea fx:id="tfPlayer3Score" layoutX="159.0" layoutY="220.0" prefHeight="45.0" prefWidth="161.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="164.0" />
+                              <TextArea fx:id="tfPlayer4Score" layoutX="154.0" layoutY="290.0" prefHeight="45.0" prefWidth="161.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="164.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
