@@ -1,0 +1,18 @@
+Notes on GUI
+
+
+- Need to keep action screen static. One can pull different panes in action/game screen over other stuff
+- make text areas read only
+- Action screen resolution too high - cant see all stuff
+- consider moving the player action buttons and labels to the left and consider a more vertical layout
+- turn action text boxes into buttons
+- Turn player names into buttons that can be enabled when attacking. Gets rid of checkboxes
+- determine necesiity of scoreboard
+- back button on top left
+- Text areas need to be read only
+- consolidate player info areas
+- love the fade in effect
+- scaling? seems difficult might not have time
+- continue button leads to game list screen and not current game in aciton
+- new game doesnt lead to game list screen/no game list screen in main menu possibly. Possibly a design decision 
+- lock down plant types
